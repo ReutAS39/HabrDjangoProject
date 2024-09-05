@@ -39,7 +39,3 @@ async def fetch_horoscope(zodiac_en="cancer"):
     # Формирование новых <p> для каждой строки текста
     paragraphs = ''.join([f'<p>{line}</p>' for line in text_lines])
     return paragraphs
-
-
-
-print(asyncio.run(fetch_horoscope(zodiac_en="aries")))
